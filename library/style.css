@@ -1,8 +1,20 @@
+
+
+@font-face {
+  font-family: 'Lucida Sans';
+  src: url('font/lucida-sans-unicode.woff') format('.woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+
 body{
   background-image: url(/img/bg.png);
   background-size: cover;
   background-position: center;
   height: 220vh;
+  font-family: 'Lucida Sans';
 }
 
 
@@ -26,6 +38,11 @@ body{
     border-radius: 10px;
     background-image: url(/img/batiks0.jpg);
     background-color: rgb(189, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .butoon:hover{
@@ -39,8 +56,6 @@ body{
 /* Breakdown */
 
 @media (max-width: 991.98px) {
-
-
     .navbar-brand {
       position: absolute;
       left: 50%;
@@ -51,5 +66,30 @@ body{
     .kontenisi{
       color: red;
     }
+
+  }
+
+  @media(min-width: 3840px) {
+
+      .container {
+        max-width: 1140px; /* Default Bootstrap container width for large screens */
+        }
+
+      .kontenisi .card{
+        padding:20px;
+        }
+
+      .kontenisi .card-img-top {
+        height: 30vw; /* Adjust height for 4K screens */
+        }
+
+    .kontenisi .card-title {
+        font-size: 2rem; /* Adjust font size for 4K screens */
+        }
+
+    .kontenisi .card-text {
+        font-size: 1.2rem; /* Adjust font size for 4K screens */
+       }
+
 
   }
