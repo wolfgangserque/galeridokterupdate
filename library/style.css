@@ -63,11 +63,50 @@ body{
     }
 
 
-    .kontenisi{
-      color: red;
-    }
+    .butoon{
+      margin-right: 20px;
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      border: transparent;
+      width: 60%;
+      padding: 10px;
+      border-radius: 10px;
+      background-image: url(/img/batiks0.jpg);
+      background-color: rgb(189, 6, 6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+      .butoon:hover{
+      color: white;
+      background-color: rgb(164, 0, 0);
+      transform: scale(1.1); /* Efek skala saat hover */
+      }
+
+
+      .kontenisi .card{
+        justify-content: center;      
+
+      }
+
+      .kontenisi .card .card-img-top{
+        height: 50vh;
+        object-fit: cover;
+      }
+
+      .kontenisi .card-body {
+        font-size: 1rem;
+      }
+    
+
 
   }
+
+
 
   @media(min-width: 3840px) {
 
