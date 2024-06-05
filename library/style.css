@@ -8,19 +8,17 @@
 }
 
 
-
 body{
-  background-image: url(/img/bg.png);
+  background-image: url(/img/background.png);
   background-size: cover;
   background-position: center;
-  height: 220vh;
+  background-repeat: no-repeat;
+  height: 100vh;
   font-family: 'Lucida Sans';
 }
 
 
-
 .navbar{
-  background-image: url(/img/bg.png);
   background-size: cover;
   background-position: center;
 }
@@ -42,7 +40,6 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 .butoon:hover{
@@ -108,22 +105,69 @@ body{
 
 
 
-  @media(min-width: 3840px) {
+  @media(min-width: 2155px) {
 
-      .container {
-        max-width: 1140px; /* Default Bootstrap container width for large screens */
+    /* Logo */
+      .navbar-brand{
+        margin-top: 100px;
+      }
+
+
+      /* Menu */
+
+      .butoon{
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border: transparent;
+        display: flex;
+        width: 45%;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    
+        .butoon:hover{
+        color: white;
+        transform: scale(1.1); /* Efek skala saat hover */
         }
+
+
+      /* Searchbox */
+
+      .input-group{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        align-content: center;
+      }
+
+      .input-group-text{
+        font-size: 60pt;
+      }
+
+      .searchbox{
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 100px;
+      }
 
       .kontenisi .card{
-        padding:20px;
+        margin-top: 70px;
         }
-
+        
       .kontenisi .card-img-top {
-        height: 30vw; /* Adjust height for 4K screens */
+        height: 50vw; /* Adjust height for 4K screens */
         }
 
     .kontenisi .card-title {
-        font-size: 2rem; /* Adjust font size for 4K screens */
+        font-size: 5rem; /* Adjust font size for 4K screens */
         }
 
     .kontenisi .card-text {
