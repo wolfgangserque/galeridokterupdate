@@ -1,145 +1,116 @@
-
-
-@font-face {
-  font-family: 'Lucida Sans';
-  src: url('font/lucida-sans-unicode.woff') format('.woff');
-  font-style: normal;
-  font-weight: normal;
-}
-
-
-body{
-  background-image: url(/img/background.png);
+body {
+  background-image: url('/img/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 200vh;
   font-family: 'Lucida Sans';
+  margin-top: 50px;
 }
 
+/* Gaya untuk logo di navbar */
+.logo {
+  width: 100%;
+}
 
-  @media(min-width: 2150px) {
+.container-fluid.d-flex.justify-content-center.menunav .button {
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: transparent;
+  width: 80%;
+  margin-left: 90px;
+  margin-right: 90px auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    /* Navbar */
-      .navbar-brand{
-        margin-top: 100px;
-      }
+.container-fluid.d-flex.justify-content-center.menunav .button:hover {
+  color: white;
+  transform: scale(1.1); /* Efek skala saat hover */
+}
 
-      .navbar{
-        background-size: cover;
-        background-position: center;
-      }
-      
-      
-      
+.input-group.mb-4.searchbox {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
 
-      /* Menu */
-      .button {
-        border-radius: 50px;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        border: transparent;
-        width:90%;
-        margin-left: 50px;
-        margin-left: 50px;
-        margin-top: 100px;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-    
-      .img-button a{
-        width: 40%;
-      }
+.input-group-text {
+  font-size: 40pt;
+  border-radius: 40px;
+}
 
+.form-control {
+  border-radius: 40px;
+  font-size: 50pt;
+  margin-left: 30px;
+}
 
-      .button:hover{
-      color: white;
-      transform: scale(1.1); /* Efek skala saat hover */
-      }
+.kontenisi {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
+.kontenisi .card {
+  margin-top: 70px;
+  border-radius: 30px;
+}
 
+.kontenisi .card-img-top {
+  height: 50vw; /* Adjust height for 4K screens */
+  border-radius: 30px;
+}
 
-      /* Searchbox */
+.kontenisi .card-title {
+  font-size: 5rem; /* Adjust font size for 4K screens */
+}
 
-      .input-group{
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        margin-top: 70px;
-        align-content: center;
-      }
+.kontenisi .card-text {
+  font-size: 2.5rem; /* Adjust font size for 4K screens */
+}
 
-      .input-group-text{
-        font-size: 40pt;
-        border-radius: 40px;
-      }
+.card:hover {
+  scale: 1.01;
+}
 
-      .form-control {
-        border-radius: 40px;
-      }
-
-      .searchbox{
-        margin-left: 20px;
-        margin-right: 20px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-left: 100px;
-      }
-
-
-      .form-control{
-        font-size: 70pt;
-        margin-left: 30px;
-      }
-
-
-      /* Kontenisi */
-      .kontenisi{
-        margin: 50px;
-      }
-
-      .kontenisi .card{
-        margin-top: 70px;
-        }
-        
-      .kontenisi .card-img-top {
-        height: 50vw; /* Adjust height for 4K screens */
-        }
-
-    .kontenisi .card-title {
-        font-size: 5rem; /* Adjust font size for 4K screens */
-        }
-
-    .kontenisi .card-text {
-        font-size: 1.2rem; /* Adjust font size for 4K screens */
-       }
-
-
-
-       /* Cards */
-
-       .card {
-        border-radius: 30px;
-       }
-
-       .card .card-img-top {
-        border-radius: 30px;
-       }
-
-       .card:hover{
-        scale: 1.01 ;
-       }
-       .card-body .card-title{
-       font-size: 50pt;
-       font-weight: bold;
-       }
-
-       .card-body .card-text{
-        font-size: 40pt;
-       }
-
-
+/* Media Queries for 4K Portrait */
+@media only screen and (min-width: 2160px) and (orientation: portrait) {
+  .navbar-brand {
+      margin-top: 100px;
   }
+
+  .container-fluid.d-flex.justify-content-center.menunav .button {
+      margin-top: 100px;
+  }
+
+  .input-group.mb-4.searchbox {
+      margin-top: 70px;
+  }
+
+  .kontenisi {
+      margin: 50px;
+  }
+
+  .kontenisi .card {
+      margin-top: 70px;
+  }
+
+  .kontenisi .card-img-top {
+      height: 50vw; /* Adjust height for 4K screens */
+  }
+
+  .kontenisi .card-title {
+      font-size: 5rem; /* Adjust font size for 4K screens */
+  }
+
+  .kontenisi .card-text {
+      font-size: 1.2rem; /* Adjust font size for 4K screens */
+  }
+}
