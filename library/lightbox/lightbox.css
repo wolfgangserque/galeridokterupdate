@@ -46,9 +46,6 @@ body.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
-
-  /* Background color behind image.
-     This is visible during transitions. */
   background-color: white;
 }
 
@@ -164,7 +161,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 1em;
 }

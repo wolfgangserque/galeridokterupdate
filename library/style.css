@@ -13,126 +13,52 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 200vh;
   font-family: 'Lucida Sans';
 }
 
 
-.navbar{
-  background-size: cover;
-  background-position: center;
-}
 
-
-.butoon{
-    margin-right: 20px;
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border: transparent;
-    width: 10%;
-    padding: 10px;
-    border-radius: 10px;
-    background-image: url(/img/batiks0.jpg);
-    background-color: rgb(189, 6, 6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.butoon:hover{
-    color: white;
-    background-color: rgb(164, 0, 0);
-    transform: scale(1.1); /* Efek skala saat hover */
-
-}
-
-
-/* Breakdown */
-
-@media (max-width: 991.98px) {
-    .navbar-brand {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-
-    .butoon{
-      margin-right: 20px;
-      margin-left: 20px;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-      border: transparent;
-      width: 60%;
-      padding: 10px;
-      border-radius: 10px;
-      background-image: url(/img/batiks0.jpg);
-      background-color: rgb(189, 6, 6);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-      .butoon:hover{
-      color: white;
-      background-color: rgb(164, 0, 0);
-      transform: scale(1.1); /* Efek skala saat hover */
-      }
-
-
-      .kontenisi .card{
-        justify-content: center;      
-
-      }
-
-      .kontenisi .card .card-img-top{
-        height: 50vh;
-        object-fit: cover;
-      }
-
-      .kontenisi .card-body {
-        font-size: 1rem;
-      }
-    
-
-
-  }
-
-
-
-  @media(min-width: 2155px) {
-
-    /* Logo */
+  @media(max-width: 2160px) {
+    /* Navbar */
       .navbar-brand{
         margin-top: 100px;
       }
 
+      .navbar{
+        background-size: cover;
+        background-position: center;
+      }
+      
+      
+      
 
       /* Menu */
-
-      .butoon{
+      .button {
         border-radius: 50px;
         color: white;
         text-decoration: none;
         text-align: center;
         border: transparent;
-        display: flex;
-        width: 45%;
+        width:90%;
+        margin-left: 50px;
+        margin-left: 50px;
         margin-top: 100px;
         justify-content: center;
         align-items: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
     
-        .butoon:hover{
-        color: white;
-        transform: scale(1.1); /* Efek skala saat hover */
-        }
+      .img-button a{
+        width: 40%;
+      }
+
+
+      .button:hover{
+      color: white;
+      transform: scale(1.1); /* Efek skala saat hover */
+      }
+
 
 
       /* Searchbox */
@@ -146,7 +72,12 @@ body{
       }
 
       .input-group-text{
-        font-size: 60pt;
+        font-size: 40pt;
+        border-radius: 40px;
+      }
+
+      .form-control {
+        border-radius: 40px;
       }
 
       .searchbox{
@@ -156,6 +87,18 @@ body{
         justify-content: center;
         align-content: center;
         margin-left: 100px;
+      }
+
+
+      .form-control{
+        font-size: 70pt;
+        margin-left: 30px;
+      }
+
+
+      /* Kontenisi */
+      .kontenisi{
+        margin: 50px;
       }
 
       .kontenisi .card{
@@ -172,6 +115,30 @@ body{
 
     .kontenisi .card-text {
         font-size: 1.2rem; /* Adjust font size for 4K screens */
+       }
+
+
+
+       /* Cards */
+
+       .card {
+        border-radius: 30px;
+       }
+
+       .card .card-img-top {
+        border-radius: 30px;
+       }
+
+       .card:hover{
+        scale: 1.01 ;
+       }
+       .card-body .card-title{
+       font-size: 50pt;
+       font-weight: bold;
+       }
+
+       .card-body .card-text{
+        font-size: 40pt;
        }
 
 
